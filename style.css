@@ -15,7 +15,7 @@ body{
 }
 
 header{
-    background-color: #ED0030;
+    background-color: black;
     padding: 20px 100px;
 }
 .container-superior{
@@ -44,7 +44,7 @@ header{
     background-color: transparent;
 }
 .caixa-de-pesquisa i{
-    color: #ED0030;
+    color: black;
 }
 .icons{
     display: flex;
@@ -71,7 +71,7 @@ main{
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 .produtos{
     height: 400px;
@@ -108,4 +108,11 @@ main{
 }
 .produtos-inferior p{
     font-weight: bold;
+}
+.produtos-inferior div{
+    display: flex;
+    justify-content: center;
+}
+.produtos-inferior i{
+    color: gold;
 }
