@@ -73,6 +73,11 @@ main{
     flex-wrap: wrap;
     justify-content: center;
 }
+main button{
+    border: none;
+    background-color: transparent;
+    font-family: "Poppins", sans-serif;     
+}
 .produtos{
     height: 400px;
     width: 232px;

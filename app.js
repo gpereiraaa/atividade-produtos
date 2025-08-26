@@ -4,6 +4,7 @@ import produtos from './produtos_atualizados.json' with {type: 'json'}
 
 function criarProdutos(dados){
     const main = document.getElementById('main')
+    const button = document.createElement('button')
     const divProdutos = document.createElement('div')
     divProdutos.className = 'produtos'
 
@@ -67,6 +68,9 @@ function criarProdutos(dados){
         }
     }else{}
     
+    button.addEventListener('click', () => {
+        alert(`Você clicou no produto: ${dados.nome}`)
+    })
 
     const valor = document.createElement('p')
     valor.textContent = dados.preco
@@ -74,7 +78,10 @@ function criarProdutos(dados){
 
     divProdutos.appendChild(divProdutosSuperior)
     divProdutos.appendChild(divProdutosInferior)
-    main.appendChild(divProdutos)
+    button.appendChild(divProdutos)
+    main.appendChild(button)
 }
+
+
 
 produtos.forEach(criarProdutos)
